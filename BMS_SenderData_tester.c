@@ -1,6 +1,5 @@
 #include <assert.h>
 #include "BMS_SensorData_Sender.h"
-#include "BMS_SensorData_Receiver.h"
 
 void Tester(){
 	BatteryParameters BatteryParam;
