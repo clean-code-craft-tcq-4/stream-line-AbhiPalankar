@@ -50,9 +50,9 @@ void testCalculateSMA()
 
   CalculateSMA();
   
-  assert(SMA_Temperature == AvgOfTemperature);
-  assert(SMA_SOC = AvgOfSOC);
-  assert(SMA_ChargeRate == AvgOfChargeRate);
+  assert(SMATemperature == AvgOfTemperature);
+  assert(SMASOC = AvgOfSOC);
+  assert(SMAChargeRate == AvgOfChargeRate);
 
 int main()
 {
