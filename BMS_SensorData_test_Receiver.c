@@ -11,7 +11,7 @@ void testCalculateMinValue()
    
   data = 7;
   Min = 6;
-  CalculateMinValue(data, &Min, &Max);
+  CalculateMinValue(data, &Min);
   assert(Min == 6);
 }
 
