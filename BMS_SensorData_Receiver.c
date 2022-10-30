@@ -27,3 +27,19 @@ void  CalculateMaxValue(float data, float* Max)
      /*Do nothing*/
    }
 }
+
+void CalculateSMA ()
+{
+  float SumOfTemperature = 0;
+  float SumOfSOC = 0;
+  float SumOfChargeRate = 0;
+    for (int i = 0; i < NO_OF_SAMPLES; i++)
+    {
+      SumOfTemperature += Temperature[i];
+      SumOfSOC += SOC[i];
+      SumOfChargeRate += ChargeRate[i];
+    }
+  SMATemp       = SumOfTemperature/NO_OF_SAMPLES;
+  SMASOC        = SumOfSOC/NO_OF_SAMPLES;
+  SMAChargeRate = SumOfChargeRate/NO_OF_SAMPLES;
+}
