@@ -80,6 +80,15 @@ void ReadFromConsole(float* Temp, float* StateOfCharge, float* ChargingRate)
   return;
 }
 
+int PrintMinMaxSMA()
+{
+    printf("Temp: Min = %f, Max = %f, SMA = %f\n", Min_Temp, Max_Temp, SMA_Temp);
+    printf("StateOfCharge: Min = %f, Max = %f, SMA = %f\n", Min_StateOfCharge, Max_StateOfCharge, SMA_StateOfCharge);
+    printf("ChargingRate: Min = %f, Max = %f, SMA = %f\n\n", Min_ChargingRate, Max_ChargingRate, SMA_ChargingRate);
+  
+  return 1;
+}
+
 int ReadParameters(float* Temp, float* StateOfCharge, float* ChargingRate)
 {
   char dummy;
