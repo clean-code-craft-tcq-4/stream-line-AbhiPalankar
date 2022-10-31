@@ -50,7 +50,7 @@ void testCalculateSMA()
 
   CalculateSMA();
   
-  assert(SMATemperature == AvgOfTemperature);
+  assert(SMATemp == AvgOfTemperature);
   assert(SMASOC == AvgOfSOC);
   assert(SMAChargeRate == AvgOfChargeRate);
 }
@@ -69,6 +69,3 @@ int main()
   testPrintMinMaxSMA(); 
   ReadBMSParametersfromConsole();
 }
-
-
-
