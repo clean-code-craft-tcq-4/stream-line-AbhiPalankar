@@ -6,11 +6,11 @@ float SMA_Temp = 0;
 float Temperature[NO_OF_SAMPLES] = {0};
 float Min_StateOfCharge = 0;
 float Max_StateOfCharge = 0;
-float SMA_SOC = 0;
+float SMA_StateOfCharge = 0;
 float SOC[NO_OF_SAMPLES] = {0};
 float Min_ChargingRate = 0;
 float Max_ChargingRate = 0;
-float SMA_ChargeRate = 0;
+float SMA_ChargingRate = 0;
 float ChargeRate[NO_OF_SAMPLES] = {0};
 
 
