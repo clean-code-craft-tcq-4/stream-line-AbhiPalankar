@@ -99,9 +99,9 @@ void ReadFromConsole(float* Temp, float* StateOfCharge, float* ChargingRate)
 
 int PrintMinMaxSMA()
 {
-    printf("Temp: Min = %f, Max = %f, SMA = %f\n", Min_Temp, Max_Temp, SMA_Temp);
-    printf("StateOfCharge: Min = %f, Max = %f, SMA = %f\n", Min_StateOfCharge, Max_StateOfCharge, SMA_StateOfCharge);
-    printf("ChargingRate: Min = %f, Max = %f, SMA = %f\n\n", Min_ChargingRate, Max_ChargingRate, SMA_ChargingRate);
+    printf("Temp: Min = %f, Max = %f, SMA = %f\n", Min_Temp, Max_Temp, SMATemp);
+    printf("StateOfCharge: Min = %f, Max = %f, SMA = %f\n", Min_StateOfCharge, Max_StateOfCharge, SMASOC);
+    printf("ChargingRate: Min = %f, Max = %f, SMA = %f\n\n", Min_ChargingRate, Max_ChargingRate, SMAChargeRate);
   
   return 1;
 }
