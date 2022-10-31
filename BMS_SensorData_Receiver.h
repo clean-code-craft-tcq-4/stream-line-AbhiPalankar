@@ -18,3 +18,4 @@ void CalculateMaxValue(float data, float* Max);
 void CalculateSMA();
 int ReadParameters(float* temperature, float* StateOfCharge, float* ChargingRate);
 void ReadFromConsole(float* temperature, float* StateOfCharge, float* ChargingRate);
+int PrintMinMaxSMA();
