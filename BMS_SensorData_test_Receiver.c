@@ -53,7 +53,13 @@ void testCalculateSMA()
   assert(SMATemperature == AvgOfTemperature);
   assert(SMASOC == AvgOfSOC);
   assert(SMAChargeRate == AvgOfChargeRate);
-
+  
+void testPrintMinMaxSMA()
+{
+  int result = PrintMinMaxSMA();
+  assert(result == 1);
+}
+  
 int main()
 {
   testCalculateMinValue();
