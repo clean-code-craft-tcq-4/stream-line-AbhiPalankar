@@ -8,6 +8,7 @@ extern float Max_ChargingRate;
 extern float SMATemperature;
 extern float Temperature[NO_OF_SAMPLES];
 extern float SMASOC;
+extern float SMATemp;
 extern float SOC[NO_OF_SAMPLES];
 extern float SMAChargeRate;
 extern float ChargeRate[NO_OF_SAMPLES];
