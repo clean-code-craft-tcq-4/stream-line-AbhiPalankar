@@ -65,8 +65,8 @@ int main()
   testCalculateMinValue();
   testCalculateMaxValue();
   testCalculateSMA();
+  testPrintMinMaxSMA(); 
   ReadBMSParametersfromConsole();
-  testPrintMinMaxSMA();  
 }
 
 
