@@ -63,13 +63,15 @@ void  ReadBMSParametersfromConsole()
   for (int i=0; i<50; i++)
   {
     ReadFromConsole(&Temp, &StateOfCharge, &ChargingRate);
-    
-    CalculateMinValue(Temperature,&Min_Temp);
-    CalculateMaxValue(Temperature,&Max_Temp);
-     
-    FindMinAndMax(Temp, &Min_Temp, &Max_Temp);
-    FindMinAndMax(StateOfCharge, &Min_StateOfCharge, &Max_StateOfCharge);
-    FindMinAndMax(ChargingRate, &Min_ChargingRate, &Max_ChargingRate);
+   
+    CalculateMinValue(Temp, &Min_Temp);
+    CalculateMaxValue(Temp, &Max_Temp);
+  
+    CalculateMinValue(StateOfCharge, &Min_StateOfCharge);
+    CalculateMaxValue(StateOfCharge,  &Max_StateOfCharge);
+
+    CalculateMinValue(ChargingRate, &Min_ChargingRate);
+    CalculateMaxValue(ChargingRate, &Max_ChargingRate);
 
     CalculateSMA();
     PrintMinMaxSMA();
