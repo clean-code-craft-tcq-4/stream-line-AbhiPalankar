@@ -53,8 +53,8 @@ void  ReadBMSParametersfromConsole()
   {
     ReadFromConsole(&Temp, &StateOfCharge, &ChargingRate);
     
-    CalculateMinValue(Tempetature,&Min_Temp);
-    CalculateMaxValue(Tempetature,&Max_Temp);
+    CalculateMinValue(Temperature,&Min_Temp);
+    CalculateMaxValue(Temperature,&Max_Temp);
      
     FindMinAndMax(StateOfCharge, &Min_StateOfCharge, &Max_StateOfCharge);
     FindMinAndMax(ChargingRate, &Min_ChargingRate, &Max_ChargingRate);
