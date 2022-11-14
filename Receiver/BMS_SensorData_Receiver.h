@@ -20,3 +20,4 @@ int ReadParameters(float* temperature, float* StateOfCharge, float* ChargingRate
 void ReadFromConsole(float* temperature, float* StateOfCharge, float* ChargingRate);
 int PrintMinMaxSMA();
 void ReadBMSParametersfromConsole();
+void Read_random(float* Temp, float* StateOfCharge, float* ChargingRate);
