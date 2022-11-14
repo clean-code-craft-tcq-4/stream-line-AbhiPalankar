@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "BMS_SensorData_Receiver.h"
 float Min_Temp = 0;
 float Max_Temp = 0;
@@ -62,7 +63,8 @@ void  ReadBMSParametersfromConsole()
   fgets(Buffer,30,stdin);
   for (int i=0; i<50; i++)
   {
-    ReadFromConsole(&Temp, &StateOfCharge, &ChargingRate);
+   // ReadFromConsole(&Temp, &StateOfCharge, &ChargingRate);
+    Read_random(&Temp, &StateOfCharge, &ChargingRate);
    
     CalculateMinValue(Temp, &Min_Temp);
     CalculateMaxValue(Temp, &Max_Temp);
@@ -112,3 +114,11 @@ int ReadParameters(float* Temp, float* StateOfCharge, float* ChargingRate)
   
   return scanf("%f%c%f%c%f", Temp, &dummy, StateOfCharge, &dummy, ChargingRate);
 }
+
+void Read_random(float* Temp, float* StateOfCharge, float* ChargingRate)
+{
+   *Temp = rand()/100;
+   *StateOfCharge = rand()/40;
+   *ChargingRate = rand()/40;
+}
+   
